@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+  color: #ed6815;
+}
+
+img {
+  display: inline-block;
+  width: 390px;
+  height: 290px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2px solid #ed6815;
+}
+
+.food-container {
+  margin: 0 auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}

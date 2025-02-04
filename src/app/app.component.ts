@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
-
+import { Component} from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
-  template:`
-      Hello {{city}}, {{1 + 1}}
-  `,
+  imports: [RouterOutlet, NavbarComponent],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    city: string = "CDO"
+
 }

@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ed6815;
+}
+
+button {
+    border: 2px solid #ed6815;
+    border-radius: 50px;
+    width: 600px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+
+button:hover {
+    background-color: #ed6815;
+    border: 1px solid black;
+}
