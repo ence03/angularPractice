@@ -6,10 +6,10 @@ import { CommonModule } from '@angular/common';
   selector: 'app-food',
   imports: [CommonModule],
   templateUrl: './food.component.html',
-  styleUrl: './food.component.css'
+  styleUrl: './food.component.css',
 })
 export class FoodComponent implements OnInit {
-  foods: string[] = [];
+  foods: { id: number; name: string; price: number; image: string }[] = [];
 
   constructor(private foodService: FoodService) {}
 

@@ -1,6 +1,8 @@
 <h1>Pick your food</h1>
 <div class="food-container">
-  <div class="food-card" *ngFor="let food of foods">
-    <img [src]="food" alt="food" />
+  <div *ngFor="let food of foods" class="food-item">
+    <h2>{{ food.name }}</h2>
+    <p>Price: {{ food.price }}Php</p>
+    <img [src]="food.image" alt="food" />
   </div>
 </div>
